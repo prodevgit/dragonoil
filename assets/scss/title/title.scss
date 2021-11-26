@@ -1,0 +1,24 @@
+@mixin title-md {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+@mixin title-sm {
+  @media (max-width: 540px) {
+      @content;
+  }
+}
+
+.title-blue {
+    color: #213248;
+}
+
+.title-right {
+    float: right;
+    @include title-sm {
+        float: unset;
+    }
+    @include title-md{
+      float: unset;
+  }
+}

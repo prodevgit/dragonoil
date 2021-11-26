@@ -1,0 +1,29 @@
+@mixin table-md {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+.table-head {
+    padding-top: 15px;
+    label {
+        color: black;
+        font-weight: 700;
+        .custom-select {
+            width: auto;
+        }
+    }
+}
+
+.dataTables_filter {
+    padding-top: 15px;
+    text-align: right;
+    input {
+        margin-left: 0.5em;
+        display: inline-block;
+        width: auto;
+    }
+    @include table-md {
+        text-align: unset;
+    }
+}

@@ -1,0 +1,43 @@
+.btn-blue-gradient {
+    background-color: rgba(149, 111, 235, 1);
+    border: 0;
+    color: #fff;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: transparent linear-gradient( 123deg, rgba(149, 111, 235, 1) 0%, rgba(149, 111, 235, 1) 0%, rgba(59, 109, 218, 1) 100%) 0% 0% no-repeat padding-box;
+    min-width: 100px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.btn-orange-gradient {
+    background-color: #e15b27;
+    background: transparent linear-gradient( 133deg, #e15b27 0%, #e15b27 0%, #f3a98d 100%) 0% 0% no-repeat padding-box;
+    border: 0;
+    color: #fff;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    min-width: 100px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.btn-white {
+    background: transparent !important;
+    border: 2px solid #9f9f9f !important;
+    color: #000;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    min-width: 100px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
