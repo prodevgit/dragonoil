@@ -2854,7 +2854,7 @@ var ApiEndpoints;
     // login//
     ApiEndpoints["login"] = "login/";
     // time-entry//
-    ApiEndpoints["timeEntryGrid"] = "employee-time-entry-list-new";
+    ApiEndpoints["timeEntryGrid"] = "employee-time-entry-list/";
     ApiEndpoints["timeEntryCsv"] = "employee-time-list/csv_download";
     ApiEndpoints["timeEntryXls"] = "employee-time-list/xls_download";
     ApiEndpoints["timeEntryChart"] = "filter-charts?request_for=timeentry";

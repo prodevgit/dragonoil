@@ -5812,7 +5812,7 @@ class TimeEntryService {
         this.http = http;
         this._function = _function;
     }
-    grid(gridParams = { q: '', page: 0, limit: 10 }) {
+    grid(gridParams = { q: '', offset: 0, limit: 10 }) {
         const keys = Object.keys(gridParams);
         const value = Object.values(gridParams);
         let query = '?';
@@ -6189,14 +6189,13 @@ class TaskEntryLandingPageComponent {
     timeDetails(offSet = 1, search = this.tableSearch, limit = this.tableLimit) {
         const gridParams = {
             q: search,
-            page: offSet,
+            offset: offSet,
             limit: limit,
         };
         this.subs.add(this._timeService.grid(gridParams).subscribe(res => {
-            var _a, _b;
             if (_core_constants_constants__WEBPACK_IMPORTED_MODULE_5__.ApiStatus.ok === res.status) {
-                this.gridData = (_a = res['time-entry-list']) === null || _a === void 0 ? void 0 : _a.result;
-                this.totalCount = (_b = res['time-entry-list']) === null || _b === void 0 ? void 0 : _b.total_count;
+                this.gridData = res === null || res === void 0 ? void 0 : res.results;
+                this.totalCount = res === null || res === void 0 ? void 0 : res.count;
             }
         }));
     }
